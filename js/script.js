@@ -13,10 +13,13 @@
 
         return {
         	main: function() {
-        		this.demoFn();
-        	},
-        	demoFn: function() {
-				console.log("demoFn");
+        		var myApp = angular.module("mainApp", []);
+
+                myApp.controller("mainController", function($scope){
+                    $scope.name = "Sajeev Kumar R";
+                });
+
+                console.log("Mile stone");
         	}
         }
 	})();
